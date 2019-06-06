@@ -10,32 +10,159 @@
             content="Davi Pradi"/>
       <meta name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
+            
+      <style>
+         *{}
+         
+         #divMain{
+            background-color: #FFF;
+            
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            
+            width: 800px;
+            height: 600px;
+         }
+         
+         header{
+            background-color: #666;
+            
+            position:absolute;
+            left: 0px;
+            top: 0px;
+            
+            width: 800px;
+            height: 50px;
+         }
+         
+         #navMainOptions{
+            background-color: #66F;
+            
+            position:absolute;
+            left: 0px;
+            top: 50px;
+            
+            width: 800px;
+            height: 40px;
+             
+         }
+         
+         #asdContentOptions{
+            background-color: #F00;
+            
+            position:absolute
+            left: 600px 
+            top: 90px;
+            
+            width:200px
+            height:560px
+         }
+         
+         #sctContent{ 
+             
+            background-color: #FF0;
+            
+            position:absolute;
+            left: 200px; 
+            top: 90px;
+            
+            width:600px;
+            height:460px;
+            
+             
+         }
+         
+         #asdContentOptions{
+            background-color: #F00;
+            
+            position:absolute;
+            left: 0px; 
+            top: 90px;
+            
+            width:200px;
+            height:460px;
+         }
+         
+         footer{
+            background-color: #FF4A;
+            
+            position:absolute;
+            left: 0px; 
+            top: 550px;
+            
+            width:800px;
+            height:50px;
+         }
+         
+         h3, h5{
+             margin:0px;
+             border:0px;
+             padding:0px;
+                       
+         }
+         
+         ul {
+             background-color:green;
+             font-family:fantasy;
+             margin:10px;
+             border:0px;
+             padding:0px;
+             list-style-type:none;
+             
+         }
+         
+         ul li{
+            background-color: #F00;
+            padding:0px;
+            height:100%;
+            margin:10px;
+            margin-left:10px;
+            border:0px;
+            display:inline;
+            
+         }
+         
+         ul li a:visited{
+            position:absolute;
+            padding:5px;
+            color:#FF0;
+         }
+         
+         ul li a:hover{
+            color:Skyblue;
+         }
 
-      <title>webstandards 11187.</title>
-   </head>
-
+      </style>
+         <title>WS11187</title>
+   </head>      
    <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
-      <div id="divMain";> <!--wrapper-->
-         <header id="hdrTopbar";">
-            <h3>Header</h3>
+      <div id="divMain"> <!--wrapper-->
+         <header id="hdrTopbar">
+            <h3>webstandards 11187</h3>
          </header> <!--<header id="hdrTopbar";">-->
-         <nav id="navMainOptions";">
-            <h4> Navegação </h4>
-            <div id="divHome";>
-               <ul id="ulOptions">
-                  <li>
-                     <a href="index.html"> Home </a>
-                  </li>
-               </ul>
-            </div> <!--<div id="divHome">-->
+         <nav id="navMainOptions">
+            <ul id="ulOptions">
+               <li>
+                  <a href="index.html"> Home </a>
+               </li>
+               <li>
+                  <a href="index.html"> Products </a>
+               </li>
+               <li>
+                  <a href="index.html"> About </a>
+               </li>
+            </ul>
          </nav><!--<nav id="navMainOptions";">-->
-         <section id="sctContent">
-            <h5>Conteúdo</h5>
+         <section>
+            <aside id="asdContentOptions">
+               <h5>A side</h5>
+            </aside><!--<aside id="asdContentOptions";>-->
+            <div id="sctContent">
+               <h5>Content Section</h5>
+            </div>   
          </section><!--<section id="sctContent">-->
-         <aside id="asdContentOptions";>
-            <h5>A side</h5>
-         </aside><!--<aside id="asdContentOptions";>-->
-         <footer id="ftrBottonBar";>
+         <footer id="ftrBottonBar">
             <h4>footer</h4>
          </footer><!--<footer id="ftrBottonBar";>-->
       </div><!--<div id="divMain">-->
