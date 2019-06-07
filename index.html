@@ -1,64 +1,223 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>webstandards 11187</title>
-   </head>
+<html lang="pt-br">
+   <head> <!-- TODO DOCUMENTO HTML TEM UM <head> -->
+      <meta charset="UTF-8"/>
+      <meta name="description"
+            content="Free Web tutorials"/>
+      <meta name="keywords"
+            content="HTML,CSS,ZenGarden,W3Schools"/>
+      <meta name="author"
+            content="Davi Pradi"/>
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0"/>
 
-   <body>
-	   <h3 id ="h3MainTitle">webstandards 11187</h3>
-      <ul id ="ulMainOptions">
-         <li>
-            <a href="https://www.w3schools.com/tags/default.asp" 
-               target="_blank">Guia de refer&ecirc;ncia
-            </a>
-         </li>
-         <li>
-            <a href="https:/www.google.com" 
-               target="_blank">Google
-            </a>
-         </li>
-         <li>
-            <a href="ws-11187.html" 
-               target="_self">Dicas de Aula
-            </a>
-         </li>
-         <li>            
-            <a href="author.html" 
-               target="_self">
-               Autor
-            </a>
-         </li>
-         <li>
-            <a href="aula_31Mai.html" 
-               target="_self">
-               Aula 31 de Maio
-            </a>
-         </li>
-         <li>
-            <a href="http://www.csszengarden.com/" 
-               target="_blank">CSS Zen Garden
-            </a>
-         </li>
-      </ul> <!-- <ul id ="ulMainOptions"> -->
-      <ul id="ulLayouts">
-         <li>
-            <a href="layout-divs.html" 
-               target="_self">
-               Layout com divs
-            </a>
-         </li>      
-         <li>
-            <a href="layout_html5.html" 
-               target="_self">
-               Layout Html5
-            </a>
-         </li>
-         <li>
-            <a href="modelo.html" 
-               target="_blank">
-               Modelo
-            </a>
-         </li>         
-      </ul> <!-- <ul id ="ulLayouts"> -->
-   </body>  
+      <style>
+         *{
+             margin:0px;
+             border:0px;
+             padding:0px;
+         }
+         #divMain{
+             background-color: #FFF;
+             position: absolute;
+             left: 20px;
+             top: 20px;
+             width: 800px;
+             height: 600px;
+         }              
+         
+         header{
+             background-color: #DC143C;
+             position:absolute;
+             left: 0px;
+             top: 0px;
+             width: 800px;
+             height: 50px;
+             text-transform:uppercase;
+             text-align-last:center;
+         }
+
+         #navMainOptions{
+             background-color: #8FBC8F;
+             position:absolute;
+             left: 0px;
+             top: 50px;
+             width: 800px;
+             height: 40px;
+         }
+         /*CONTEUDO*/
+         #sctContent{
+             background-color: #F5F5FF;
+             position:absolute;
+             left: 0px;
+             top: 90px;
+             width:800px;
+             height:470px;
+         }
+         
+        /*ASIDE*/                         
+         #asdContentOptions{
+             background-color: #A52A2A;
+             position:absolute;
+             left: 0px;
+             top: 0px;
+             width:200px;
+             height:470px;
+             list-style-type:none;
+         }
+         
+         #divContent{
+             background-color: #A52FFA;
+             position:absolute;
+             left: 200px;
+             top: 0px;
+             width:600px;
+             height:470px;
+             
+         }
+         
+         #ulOptions li{
+             /*background-color: #F00;*/
+             padding:0px;
+             margin:10px;
+             margin-left:10px;
+             border:0px;
+             display:inline;
+             font-family:arial;
+         }
+         
+         #ulOptions li a:visited{
+             position:absolute;
+             padding:5px;
+             color:#FFD;
+         }         
+         #ulOptions li a:hover{
+             color:Skyblue;
+         }
+         /*FECHA CONTEUDO*/
+             
+         #asdContentOptions li:hover{
+             background-color:#DDD;
+             padding:0px;
+             height:100%;
+         }
+         
+         #ulAsideOptions li{
+             list-style-type: none;
+         }
+         /*FECHA ASIDE*/
+         
+         
+         
+         /*FOOTER*/
+         footer{
+             background-color: #FFF;
+             position:absolute;
+             left: 0px;
+             top: 560px;
+             width:800px;
+             height:40px;
+         }         
+         /*FECHA FOOTER*/
+         
+         
+         h3, h5{
+             margin:0px;
+             border:0px;
+             padding:0px;
+         }
+         ul {
+             margin:10px;
+             border:0px;
+             padding:0px;
+             
+         }
+         ul li{
+             /*background-color: #00f;*/
+             padding:0px;
+             height:100%;
+             margin:10px;
+             margin-left:10px;
+             border:0px;
+             font-family:Gill Sans;
+         }
+      </style>
+      <title>WS11187</title>
+   </head>
+   <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
+      <div id="divMain"> <!--wrapper-->
+         <header id="hdrTopbar">
+            <h3>webstandards 11187</h3>
+         </header> <!--<header id="hdrTopbar";">-->
+         <nav id="navMainOptions">
+            <ul id="ulOptions">
+               <li>
+                  <a href="index.html"> Home
+                  </a>
+               <li>
+                  <a href="https://www.w3schools.com/tags/default.asp"
+                     target="_blank">Guia de refer&ecirc;ncia
+                  </a>
+               </li>
+               <li>
+                  <a href="https:/www.google.com"
+                     target="_blank">Google
+                  </a>
+               </li>
+               <li>
+                  <a href="http://www.csszengarden.com/"
+                     target="_blank">CSS Zen Garden
+                  </a>
+               </li>
+            </ul>
+         </nav><!--<nav id="navMainOptions";">-->
+         <section id="sctContent">
+            <aside id="asdContentOptions">
+               <ul id="ulAsideOptions">
+                  <li>
+                     <a href="ws-11187.html"
+                        target="_self">Dicas de Aula
+                     </a>
+                  </li>
+                  <li>
+                     <a href="author.html"
+                        target="_self">
+                        Autor
+                     </a>
+                  </li>
+                  <li>
+                     <a href="aula_31Mai.html"
+                        target="_self">
+                        Aula 31 de Maio
+                     </a>
+                  </li>          
+                  <li>
+                     <a href="layout-divs.html"
+                        target="_self">
+                        Layout com divs
+                     </a>
+                  </li>
+                  <li>
+                     <a href="layout_html5.html"
+                        target="_self">
+                        Layout Html5
+                     </a>
+                  </li>
+                  <li>
+                     <a href="modelo.html"
+                        target="_blank">
+                        Modelo
+                     </a>
+                  </li>
+               </ul>
+            </aside><!--<aside id="asdContentOptions";>-->
+            <div id="divContent">
+               <h3>conteudo</h3>
+            </div>
+         </section><!--<section id="sctContent">-->
+         <footer id="ftrBottonBar">
+            <p>footer</p>
+         </footer><!--<footer id="ftrBottonBar";>-->
+      </div><!--<div id="divMain">-->
+   </body>
 </html>
