@@ -10,9 +10,13 @@
             content="Davi Pradi"/>
       <meta name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
-            
+      <title>WS11187</title>      
       <style>
-         *{}
+         *{
+/*             margin:0px;
+             border:0px;
+             padding:0px;*/
+         }
          
          #divMain{
             background-color: #FFF;
@@ -134,37 +138,64 @@
          }
 
       </style>
-         <title>WS11187</title>
    </head>      
    <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
-      <div id="divMain"> <!--wrapper-->
-         <header id="headerTopBar">
-            <h3>webstandards 11187</h3>
-         </header> <!--<header id="headerTopBar";">-->
-         <nav id="navMainOptions">
-            <ul id="ulOptions">
-               <li>
-                  <a href="index.html"> Home </a>
-               </li>
-               <li>
-                  <a href="index.html"> Products </a>
-               </li>
-               <li>
-                  <a href="index.html"> About </a>
-               </li>
-            </ul>
-         </nav><!--<nav id="navMainOptions";">-->
-         <section>
-            <aside id="asideContentOptions">
-               <h5>A side</h5>
-            </aside><!--<aside id="asideContentOptions";>-->
-            <div id="sectionContent">
-               <h5>Content Section</h5>
-            </div>   
-         </section><!--<section id="sectionContent">-->
-         <footer id="footerBottonBar">
-            <h4>footer</h4>
-         </footer><!--<footer id="footerBottonBar";>-->
-      </div><!--<div id="divMain">-->
+      <form id="formSample1"
+            name="formSample1"
+            action="form-data.php"
+            method="GET"> <!--GET ou POST-->
+         
+         
+         <label id="labelName"
+                for="textName">Nome:</label><br />
+         <input id="textName"
+               name="textName"
+               type="text"
+               placeholder="Digite aqui o seu nome"
+               required /><br />
+         
+         
+         <label id="labelEmailAddress"
+                for="emailEmailAdress">e-mail:</label><br />
+         <input id="emailEmailAddress"
+               name="emailEmailAddress"
+               type="email"
+               placeholder="Digite aqui o seu e-mail"
+               required /><br />
+         
+         
+         <label id="labelGit"
+                for="urlGit">git:</label><br />
+         <input id="urlGit"
+               name="urlGit"
+               type="url"
+               placeholder="Digite aqui o seu git"
+               required /><br />
+         
+         
+         <label id="labelSchedule"
+                for="urlSchedulet">Agendar:</label><br />
+         <input id="dateSchedule"
+               name="dateSchedule"
+               type="date"
+               required /><br />
+         
+         
+         
+         <label id="labelAutenticate"
+                for="passwordAutenticate">Autenticar:</label><br />
+         <input id="passwordAutenticate"
+               name="passwordAutenticate"
+               type="password"
+               required /><br />
+         
+         
+         
+         
+         
+         <input id="submitSend"
+                type="submit"
+                value="Enviar"/>
+      </form>
    </body>
 </html>

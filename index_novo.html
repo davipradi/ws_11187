@@ -10,6 +10,7 @@
             content="Davi Pradi"/>
       <meta name="viewport"
             content="width=device-width, initial-scale=1.0"/>
+
       <style>
          *{
              margin:0px;
@@ -46,10 +47,10 @@
              height: 39px;
              border-bottom:1px;
          }
-
-
-
-         /*CONTEUDO*/
+         
+         
+         
+/*CONTEUDO*/
          #sectionContent{
              background-color: #FFF;
              position:absolute;
@@ -64,20 +65,12 @@
              left: 200px;
              top: 0px;
              width:1240px;
-             height:800px;
+             height:800px;             
          }
-         #iframeContent{
-             /*background-color: #000;*/
-             position:absolute;
-             left: 0px;
-             top: 0px;
-             width:100%;
-             height:100%;
-         }
-         /*FECHACONTEUDO*/
+/*FECHACONTEUDO*/
 
-
-         /*ASIDE*/
+         
+/*ASIDE*/                         
          #asideContentOptions{
              background-color: #EEE;
              position:absolute;
@@ -87,7 +80,7 @@
              height:800px;
              list-style-type:none;
          }
-         #ulMainOptions li{
+         #ulOptions li{
              /*background-color: #F00;*/
              padding:0px;
              margin:10px;
@@ -97,42 +90,42 @@
              font-family:Optima;
              color:red;
          }
-
-
-
-
-         #ulMainOptions li a:visited{
+         
+             
+             
+                  
+         #ulOptions li a:visited{
              position:absolute;
              padding:0px;
-
-         }
-         #ulMainOptions li a:hover{
+             
+         }         
+         #ulOptions li a:hover{
              color:Skyblue;
          }
          #asideContentOptions li:hover{
              background-color:#DDD;
              padding:0px;
              height:100%;
-         }
-         #ulContentOptions li{
+         }         
+         #ulAsideOptions li{
              list-style-type: none;
          }
-         /*FECHAASIDE*/
-
-
-
-         /*FOOTER*/
+/*FECHAASIDE*/         
+         
+         
+         
+/*FOOTER*/
          #footerBottonBar{
-             background-color: #AAA;
+             background-color: #FFE4C4;
              position:absolute;
              left: 0px;
              top: 870px;
              width:1440px;
              height:30px;
-         }
-         /*FECHAFOOTER*/
-
-
+         }         
+/*FECHAFOOTER*/
+         
+         
          h3, h5{
              margin:0px;
              border:0px;
@@ -142,7 +135,7 @@
              margin:10px;
              border:0px;
              padding:0px;
-
+             
          }
          ul li{
              /*background-color: #00f;*/
@@ -162,7 +155,7 @@
             <h3>webstandards 11187</h3>
          </header> <!--<header id="headerTopBar";">-->
          <nav id="navMainOptions">
-            <ul id="ulMainOptions">
+            <ul id="ulOptions">
                <li>
                   <a href="index.html"> Home
                   </a>
@@ -185,33 +178,38 @@
          </nav><!--<nav id="navMainOptions";">-->
          <section id="sectionContent">
             <aside id="asideContentOptions">
-               <ul id="ulContentOptions">
+               <ul id="ulAsideOptions">
                   <li>
                      <a href="ws-11187.html"
-                        target="iframeContent">Notas de Aula
+                        target="_self">Dicas de Aula
+                     </a>
+                  </li>
+                  <li>
+                     <a href="ws-11187.html"
+                        target="_self">Dicas de Aula
                      </a>
                   </li>
                   <li>
                      <a href="author.html"
-                        target="iframeContent">
+                        target="_self">
                         Autor
                      </a>
                   </li>
                   <li>
                      <a href="aula_31Mai.html"
-                        target="iframeContent">
+                        target="_self">
                         Aula 31 de Maio
                      </a>
-                  </li>
+                  </li>          
                   <li>
                      <a href="layout-divs.html"
-                        target="iframeContent">
+                        target="_self">
                         Layout com divs
                      </a>
                   </li>
                   <li>
                      <a href="layout_html5.html"
-                        target="iframeContent">
+                        target="_self">
                         Layout Html5
                      </a>
                   </li>
@@ -221,23 +219,10 @@
                         Modelo
                      </a>
                   </li>
-                  <li>
-                     <a href="index_novo.html"
-                        target="_blank"> Novo index
-                     </a>
-                  <li>
-                  <li>
-                     <a href="forms.html"
-                        target="_self"> Formul&aacuterios
-                     </a>
-                  <li>
                </ul>
             </aside><!--<aside id="asideContentOptions";>-->
             <div id="divContent">
-               <iframe id="iframeContent"
-                       name="iframeContent">
-                  
-               </iframe>
+               <h3>conteudo</h3>
             </div>
          </section><!--<section id="sectionContent">-->
          <footer id="footerBottonBar">
