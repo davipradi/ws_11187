@@ -10,12 +10,13 @@
             content="Davi Pradi"/>
       <meta name="viewport"
             content="width=device-width, initial-scale=1.0"/>
+      <title>WS11187</title>
       <style>
-         *{
+         *{/*
              margin:0px;
              border:0px;
              padding:0px;
-         }
+         */}
          #divMain{
              background-color: #EEE;
              position: relative;
@@ -82,7 +83,7 @@
              height:100%;
          }
          /*FECHA CONTEUDO*/
-         
+
          /*MENU HORIZONTAL*/
          #ulMainOptions li{
              /*background-color: #F00;*/
@@ -107,8 +108,8 @@
          #ulMainOptions li a:hover{
              color:lightgreen;
          }
-         /*FECHA MENU HORIZONTAL*/        
-         
+         /*FECHA MENU HORIZONTAL*/
+
          /*MENU VERTICAL ASIDE*/
          #asideContentOptions{
              background-color: #EEE;
@@ -119,7 +120,7 @@
              top: 0px;
              width:200px;
              height:800px;
-             list-style-type:none;             
+             list-style-type:none;
          }
          #asideContentOptions ul li{
              /*background-color: #00f;*/
@@ -151,73 +152,50 @@
              width:1440px;
              height:30px;
          }
-         /*FECHA FOOTER*/
          
+     
+         /*FECHA FOOTER*/
+
       </style>
-      <title>WS11187</title>
    </head>
-   <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
-      <div id="divMain"> <!--wrapper-->
-         <header id="headerTopBar">
-            <h3>webstandards 11187</h3>
-         </header> <!--<header id="headerTopBar";">-->
-         <nav id="navMainOptions">
-            <ul id="ulMainOptions">
-               <li>
-                  <a href="index.html"
-                     target="_self"> Home
-                  </a>
-               <li>
-                  <a href="https://www.w3schools.com/tags/default.asp"
-                     target="_blank">Guia de refer&ecirc;ncia
-                  </a>
-               </li>
-               <li>
-                  <a href="https:/www.google.com"
-                     target="_blank">Google
-                  </a>
-               </li>
-               <li>
-                  <a href="http://www.csszengarden.com/"
-                     target="_blank">CSS Zen Garden
-                  </a>
-               </li>
-            </ul>
-         </nav><!--<nav id="navMainOptions";">-->
-         <section id="sectionContent">
-            <aside id="asideContentOptions">
-               <ul id="ulContentOptions">
-                  <li>
-                     <a href="form_1.html"
-                        target="iframeContent">Form Modelo
-                     </a>
-                  </li>
-                  <li>
-                     <a href="formLogin.html"
-                        target="iframeContent">Form Login                       
-                     </a>
-                  </li>
-                  <li>
-                     <a href="formUser.html"
-                        target="iframeContent">Form Cadastro                        
-                     </a>
-                  </li>
-                  <li>
-                     <a href="formEmail.html"
-                        target="iframeContent">Form Email                        
-                     </a>
-                  </li>                 
-               </ul>
-            </aside><!--<aside id="asideContentOptions";>-->
-            <div id="divContent">
-               <iframe id="iframeContent"
-                       name="iframeContent">
-               </iframe>
-            </div>
-         </section><!--<section id="sectionContent">-->
-         <footer id="footerBottonBar">
-            <h5>footer</h5>
-         </footer><!--<footer id="footerBottonBar";>-->
-      </div><!--<div id="divMain">-->
-   </body>
+        <body> <!-- TODO DOCUMENTO HTML TEM UM <body> -->
+           <form id="formLogin"
+                 name="formLogin"
+                 action="form-data.php"
+                 method="GET">
+              
+              <label id="labelUser"
+                     for="textUser">
+                     Login:      
+              </label><br />
+              <input id="textUser"
+                     name="textUser"
+                     type="text"
+                     placeholder="Digite aqui o seu login"
+                     required /><br />
+              <label id="labelPasswordSecret"
+                     for="passwordSecret">
+                     Senha:                        
+              </label><br />
+              <input id="passwordSecret"
+                     name="passwordSecret"
+                     type="password"
+                     placeholder="Digite aqui a sua senha"
+                     required /><br/><br />
+              <label id="labelCheckboxRemember"
+                     for="checkboxRemember">
+                     Lembrar login?
+              </label>
+              <input id="checkboxRemember"
+                     name="checkboxRemember"
+                     type="checkbox"/><br /><br />
+              <input id="submitLogin"
+                     type="submit"
+                     value="Enviar"/>
+                     
+                     
+                     
+        
+        </form>      
+        </body>
 </html>
