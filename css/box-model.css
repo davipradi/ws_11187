@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 12/06/2019, 20:40:09
     Author     : Aluno
 */
@@ -16,34 +16,34 @@ html{
     margin:5px;
     border:0;
     padding:5px;
-    
+
     background-color: #ddd;
     border:1px solid #fff;
-       
+
     height:94%;
 }
 body{
     margin:5px;
     border:0;
     padding:5px;
-    
+
     background-color: #ddd;
     border:1px solid #f00;
-       
+
     height:94%;
 }
 
 div{
-    
+
     margin:10px auto;
     border:1px solid #ff0;
     padding:5px;
-    
-    
-    
+
+
+
     background-color: #ddd;
-    
-       
+
+
     height:90%;
     width:90%;
     text-align:center;
@@ -56,14 +56,69 @@ h3{
 
 /* "." faz referência a classe no html*/
 .inner-div{
-    
     margin:10px auto;
-    border: 1px solid green;
-    padding:5px solid green;   
-        
-    background-color: #585;
-    
-    height:80%;
-    width:70%;
-    text-align:center;
+    border: 4px outset #bbb ;
+    padding:5px ;
+    background-color: #0ff;
+
+    height:70%;
+    width:40%;
+    text-align: center;
 }
+.left-div{
+    float: left;
+}
+.right-div{
+    float: right;
+}
+
+#divLeft{
+    border-radius: 25px;
+    background-image: url(../media/images/HTML5_CSS3.png);
+    background-repeat: no-repeat;
+    /*background-position: 80px 120px;*/
+    /*background-attachment: fixed;*/
+    background-size: contain;
+}
+
+#divRight{
+    overflow-y: scroll;
+
+}
+
+article{
+    padding: 10px;
+}
+
+article p{
+    font-size:12px;
+    text-align: justify;
+    margin: 10px 5px;
+    /*font-family:
+    font-style:
+    font-weight:*/
+}
+article li{
+    font: italic 10px/14px Georgia;
+    text-align: justify;
+    margin: 5px 5px 5px 14px;
+    list-style-image:url("../media/images/HTML5_CSS3.png") 
+    
+}
+span{
+    font-weight:bolder;
+    color: #000;
+}
+.underline{
+    font-weight: normal;
+    text-decoration: underline;
+}
+.bold-yellow{
+    font-weight: bolder;
+    color: #ff0;
+
+}
+
+
+
+
