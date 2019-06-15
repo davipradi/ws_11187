@@ -12,6 +12,10 @@ and open the template in the editor.
     border:0px;
     padding:0px;
 }
+html{
+    background-color: #EEE;
+    position: absolute;
+}
 #divMain{
     background-color: #EEE;
     position: relative;
@@ -98,12 +102,12 @@ a:link{
 #ulMainOptions li a{
     color:green;
 }
-#ulMainOptions li a:visited{
+#ulMainOptions li :visited{
     position:absolute;
     padding:0px;
     color:darkgreen;
 }
-#ulMainOptions li a:hover{
+#ulMainOptions li :hover{
     color:lightgreen;
 }
 /*FECHA MENU HORIZONTAL*/
@@ -132,11 +136,14 @@ a:link{
     font-family:Optima;
     font-size:medium;
 }
-#asideContentOptions li :hover{
+#ulContentOptions li :hover{
     background-color:#DDD;
     height:100%;
+    margin:auto;
+    padding:auto;
+    
 }
-#ulContentOptions li{
+#ulContentOptions li {
     list-style-type: none;
 }
 /*FECHA MENU VERTICAL ASIDE*/

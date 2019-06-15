@@ -7,6 +7,10 @@ and open the template in the editor.
     Created on : 12/06/2019, 20:40:09
     Author     : Aluno
 */
+@font-face{
+    font-family: Lato-Regular;
+    src: url("../media/font/Lato-Regular.ttf");
+}
 *{
     margin: 0px;
     border: 0px;
@@ -16,55 +20,50 @@ html{
     margin:5px;
     border:0;
     padding:5px;
-
     background-color: #ddd;
     border:1px solid #fff;
-
     height:94%;
 }
 body{
     margin:5px;
-    border:0;
-    padding:5px;
-
-    background-color: #ddd;
     border:1px solid #f00;
-
+    padding:5px;
+    background-color: #ddd;
     height:94%;
 }
-
 div{
-
     margin:10px auto;
     border:1px solid #ff0;
     padding:5px;
-
-
-
     background-color: #ddd;
-
-
     height:90%;
     width:90%;
     text-align:center;
 }
-
 h3{
     background-color:white;
     font: italic bold 12px/30px Georgia, serif;
 }
-
 /* "." faz referência a classe no html*/
 .inner-div{
     margin:10px auto;
     border: 4px outset #bbb ;
+    box-shadow: 5px 5px 10px #444;
     padding:5px ;
-    background-color: #0ff;
-
+    background-color: #325050;
     height:70%;
     width:40%;
     text-align: center;
+    /*transition: all 3s ease;ta aqui o efeito bizarro.*/
 }
+
+.inner-div:hover{
+    box-shadow: 5px 5px 10px #444;
+    background-color: #fff;
+    text-align: center;
+    transition: all 3s ease;
+}
+
 .left-div{
     float: left;
 }
@@ -75,21 +74,25 @@ h3{
 #divLeft{
     border-radius: 25px;
     background-image: url(../media/images/HTML5_CSS3.png);
+    /*background-image: radial-gradient(red,green,blue);*/
     background-repeat: no-repeat;
     /*background-position: 80px 120px;*/
     /*background-attachment: fixed;*/
     background-size: contain;
+    /*opacity:0.5;*/
 }
-
+/*#divInnerLeft{
+    position:relative;
+    height:auto;
+    width:auto;
+}*/
 #divRight{
     overflow-y: scroll;
-
+    /*background-image: radial-gradient(red,green,blue);*/
 }
-
 article{
     padding: 10px;
 }
-
 article p{
     font-size:12px;
     text-align: justify;
@@ -99,11 +102,15 @@ article p{
     font-weight:*/
 }
 article li{
-    font: italic 10px/14px Georgia;
+    font-size: 10px;
     text-align: justify;
     margin: 5px 5px 5px 14px;
-    list-style-image:url("../media/images/HTML5_CSS3.png") 
-    
+    font-family: 'Raleway', sans-serif;
+}
+article h5{
+    font-family: Lato-Regular;
+    font-size: 16px;
+    text-shadow: 10px;
 }
 span{
     font-weight:bolder;
@@ -116,7 +123,6 @@ span{
 .bold-yellow{
     font-weight: bolder;
     color: #ff0;
-
 }
 
 
